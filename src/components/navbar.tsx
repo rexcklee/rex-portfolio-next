@@ -63,7 +63,7 @@ const NavBar: React.FC = () => {
                 <p
                   className={`text-highlight px-2 py-4 rounded-md text-xl font-medium ${playwrite.className}`}
                 >
-                  Chis&apos Portfolio
+                  ChiKin Portfolio
                 </p>
               </div>
             </div>
