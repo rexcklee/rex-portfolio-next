@@ -62,7 +62,7 @@ const projectsQuery = qs.stringify({
       sort: ["name:asc"],
     },
   },
-  sort: ["id:desc"],
+  sort: ["sort:desc"],
 });
 
 export async function getProjectsPage() {
@@ -74,7 +74,7 @@ export async function getProjectsPage() {
 }
 
 const experiencesQuery = qs.stringify({
-  sort: ["id:desc"],
+  sort: ["sort:desc"],
 });
 
 export async function getExperiencesPage() {

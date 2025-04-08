@@ -73,7 +73,7 @@ const NavBar: React.FC = () => {
                   <Link
                     key={section}
                     href={`#${section}`}
-                    className="text-highlight hover:text-highlightsecond px-3 py-4 rounded-md text-xl"
+                    className="text-white hover:text-highlight px-3 py-4 rounded-md text-xl"
                   >
                     {section
                       .replace("_", " ")
@@ -105,7 +105,7 @@ const NavBar: React.FC = () => {
                 key={section}
                 href={`#${section}`}
                 onClick={() => setIsOpen(false)}
-                className="text-highlight hover:text-highlightsecond block px-3 py-2 rounded-md text-xl font-medium"
+                className="text-white hover:text-highlight block px-3 py-2 rounded-md text-xl font-medium"
               >
                 {section
                   .replace("_", " ")
