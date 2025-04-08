@@ -22,7 +22,7 @@ export function SkillsSection({
             skillCategories.map((category) => (
               <div className="m-4" key={category.id}>
                 <p className=" text-second text-2xl mb-4">{category.name}</p>
-                {category.skills.map((skill, index) => (
+                {category.skills.map((skill) => (
                   <p key={skill.id} className="mx-auto text-lg mb-3">
                     {skill.name}
                   </p>

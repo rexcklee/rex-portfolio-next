@@ -44,7 +44,7 @@ export function ProjectsSection({
                   className="mySwiper"
                 >
                   {project.pictures.map((picture, index) => (
-                    <SwiperSlide className="my-auto">
+                    <SwiperSlide key={index} className="my-auto">
                       <StrapiImage
                         key={index}
                         src={picture.url}
