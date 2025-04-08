@@ -20,7 +20,10 @@ export async function fetchAPI(url: string, options: FetchAPIOptions) {
       ...(authToken && { Authorization: `Bearer ${authToken}` }),
     },
     ...(body && { body: JSON.stringify(body) }),
-    ...(next && { next }),
+    next: {
+      revalidate: 60,
+      ...(next || {}),
+    },
   };
 
   try {
