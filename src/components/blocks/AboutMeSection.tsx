@@ -16,11 +16,7 @@ export function AboutMeSection({
       className="flex flex-col justify-center items-center p-6 sm:p-16 w-full min-h-screen"
     >
       <TypeAnimation
-        sequence={[
-          // Same substring at the start will only be typed out once, initially
-          `${aboutMe.headline}`,
-          1000, // wait 1s before replacing "Mice" with "Hamsters"
-        ]}
+        sequence={[`${aboutMe.headline}`, 1000]}
         wrapper="span"
         speed={50}
         className={`${playwrite.className} text-highlight text-2xl sm:text-5xl mb-8`}

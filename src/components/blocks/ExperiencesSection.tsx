@@ -7,7 +7,6 @@ export function ExperiencesSection({
 }: {
   experiences: Readonly<ExperiencesProps[]>;
 }) {
-  console.log(experiences[0].description);
   return (
     <section
       id="experiences"
