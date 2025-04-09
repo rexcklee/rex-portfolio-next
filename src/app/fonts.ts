@@ -10,6 +10,7 @@ export const playwrite = Playwrite_AU_SA({
 });
 
 export const bebas = Bebas_Neue({
+  subsets: ["latin"],
   weight: "400",
   display: "swap",
 });
