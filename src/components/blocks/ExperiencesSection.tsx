@@ -1,4 +1,4 @@
-import { playwrite } from "@/app/fonts";
+import { bebas } from "@/app/fonts";
 import { ExperiencesProps } from "@/types";
 import ReactMarkdown from "react-markdown";
 
@@ -12,16 +12,20 @@ export function ExperiencesSection({
       id="experiences"
       className="flex flex-col justify-center items-center p-6 sm:p-16 w-full min-h-screen"
     >
-      <h2
-        className={`${playwrite.className} text-highlight text-3xl sm:text-6xl mb-5`}
-      >
-        Experience
-      </h2>
+      <div className="flex items-center max-w-6xl w-full mb-10">
+        <h2
+          className={`${bebas.className} text-3xl sm:text-6xl mr-10 bg-gradient-to-r py-10 from-highlight via-second/90 to-highlightsecond inline-block text-transparent bg-clip-text`}
+        >
+          Experiences
+        </h2>
+        <div className="flex-grow h-0.5 bg-highlightsecond"></div>
+      </div>
+
       {experiences &&
         experiences.map((experience) => (
           <div
             key={experience.id}
-            className="flex flex-col w-full max-w-5xl justify-center items-start sm:m-10"
+            className="flex flex-col w-full max-w-4xl justify-center items-start sm:m-10"
           >
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full">
               <p className="text-xl text-second">{experience.company}</p>

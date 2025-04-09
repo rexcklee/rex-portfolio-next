@@ -4,7 +4,7 @@ import { StrapiImage } from "../StrapiImage";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectCube } from "swiper/modules";
 import "swiper/css/bundle";
-import { playwrite } from "@/app/fonts";
+import { bebas } from "@/app/fonts";
 import { FaGithub, FaLink } from "react-icons/fa6";
 
 export function ProjectsSection({
@@ -17,18 +17,22 @@ export function ProjectsSection({
       id="projects"
       className="flex flex-col justify-center items-center p-6 sm:p-16 w-full min-h-screen"
     >
-      <h2
-        className={`${playwrite.className} text-highlight text-3xl sm:text-6xl mb-5`}
-      >
-        Project
-      </h2>
+      <div className="flex items-center max-w-6xl w-full mb-10">
+        <h2
+          className={`${bebas.className} text-3xl sm:text-6xl mr-10 bg-gradient-to-r py-10 from-highlight via-second/90 to-highlightsecond inline-block text-transparent bg-clip-text`}
+        >
+          Projects
+        </h2>
+        <div className="flex-grow h-0.5 bg-highlightsecond"></div>
+      </div>
+
       {projects &&
         projects.map((project) => (
           <div
             key={project.id}
             className="max-w-4xl w-full flex flex-col justify-center items-start mb-10 sm:m-10 border-2 border-special rounded-4xl p-10 bg-special inset-shadow-xs inset-shadow-highlight/20 shadow-xl shadow-highlight/20"
           >
-            <div className="flex flex-row mx-auto w-2/3 mb-6">
+            <div className="flex flex-row mx-auto w-4/5 mb-6">
               <div className="w-full mx-auto h-auto">
                 <Swiper
                   effect={"cube"}
@@ -64,23 +68,25 @@ export function ProjectsSection({
             </div>
             <div className="flex flex-col sm:flex-row justify-between items-center w-full">
               <div className="flex flex-col justify-start sm:flex-row sm:justify-between items-center">
-                <p className="p-3 text-xl text-highlight hover:text-highlightsecond">
-                  {project.name}
-                </p>
-                <a
-                  href={project.demoLink}
-                  target="_blank"
-                  className="flex items-center px-1 py-1 m-1 sm:mr-2 border rounded-md border-highlight"
-                >
-                  <FaLink className="text-xl text-highlight hover:text-highlightsecond" />
-                </a>
-                <a
-                  href={project.gitHubLink}
-                  target="_blank"
-                  className="flex items-center px-1 py-1 m-1 border rounded-md border-highlight"
-                >
-                  <FaGithub className="text-xl text-highlight hover:text-highlightsecond" />
-                </a>
+                <p className="p-3 text-xl text-highlight">{project.name}</p>
+                {project.demoLink && (
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    className="flex items-center p-1 m-1 sm:mr-2 border rounded-md border-highlight text-xl text-highlight hover:text-second hover:border-second"
+                  >
+                    <FaLink className="" />
+                  </a>
+                )}
+                {project.gitHubLink && (
+                  <a
+                    href={project.gitHubLink}
+                    target="_blank"
+                    className="flex items-center px-1 py-1 m-1 border rounded-md border-highlight text-xl text-highlight hover:text-second hover:border-second"
+                  >
+                    <FaGithub className="" />
+                  </a>
+                )}
               </div>
               <p className="px-3 py-1 m-1 border border-highlight text-highlight rounded-md">
                 {project.year}

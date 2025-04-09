@@ -34,4 +34,6 @@ ol {
   list-style-type: decimal;
 }
 
-/* #90a3ff; */
+.reactMarkDown {
+  @apply rounded-b-lg shadow-md;
+}

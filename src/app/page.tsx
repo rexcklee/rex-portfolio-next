@@ -30,7 +30,7 @@ export default async function HomeRoute() {
   const data = await loader();
   return (
     <>
-      <MouseTrackerBackground color="var(--color-special)" size="100em">
+      <MouseTrackerBackground color="var(--color-special)" size="70em">
         <AboutMeSection aboutMe={data.aboutMe}></AboutMeSection>
         <ProjectsSection projects={data.projects}></ProjectsSection>
         <ExperiencesSection experiences={data.experiences}></ExperiencesSection>

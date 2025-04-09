@@ -1,4 +1,4 @@
-import { Outfit, Playwrite_AU_SA } from "next/font/google";
+import { Outfit, Playwrite_AU_SA, Bebas_Neue } from "next/font/google";
 
 export const outfit = Outfit({
   subsets: ["latin"],
@@ -6,5 +6,10 @@ export const outfit = Outfit({
 });
 
 export const playwrite = Playwrite_AU_SA({
+  display: "swap",
+});
+
+export const bebas = Bebas_Neue({
+  weight: "400",
   display: "swap",
 });

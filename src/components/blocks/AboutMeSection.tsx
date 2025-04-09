@@ -26,7 +26,7 @@ export function AboutMeSection({
         {aboutMe.subheadline}
       </h2>
       <div className="flex flex-col lg:flex-row justify-center items-center max-w-5xl">
-        <div className="">
+        <div className="bg-highlightsecond h-72 w-72 mx-auto sm:mx-10 rounded-full">
           <StrapiImage
             src={aboutMe.profile_photo.url}
             alt={
@@ -35,7 +35,7 @@ export function AboutMeSection({
             }
             width={400}
             height={400}
-            className="h-72 w-72 mx-auto sm:mx-10 object-cover rounded-full opacity-80"
+            className="h-72 w-72 object-cover rounded-full opacity-80 hover:opacity-90"
           />
         </div>
         <div className="py-5 text-lg text-justify basis-2/3">

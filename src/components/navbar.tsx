@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import { Transition } from "@headlessui/react";
-import { playwrite } from "@/app/fonts";
+import { bebas } from "@/app/fonts";
 import Link from "next/link";
 
 const menuItems = ["about_me", "projects", "experiences", "skills"];
@@ -61,7 +61,7 @@ const NavBar: React.FC = () => {
                   className="size-14 w-auto rounded-sm opacity-90"
                 />
                 <p
-                  className={`text-highlight px-2 py-4 rounded-md text-xl font-medium ${playwrite.className}`}
+                  className={`text-highlight px-2 py-4 rounded-md text-4xl ${bebas.className} bg-gradient-to-r py-10 from-highlight via-second/90 to-highlightsecond inline-block text-transparent bg-clip-text`}
                 >
                   ChiKin Portfolio
                 </p>
