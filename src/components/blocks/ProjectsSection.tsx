@@ -68,7 +68,7 @@ export function ProjectsSection({
             </div>
             <div className="flex flex-col sm:flex-row justify-between items-center w-full">
               <div className="flex flex-col justify-start sm:flex-row sm:justify-between items-center">
-                <p className="p-3 text-xl text-highlight">{project.name}</p>
+                <p className="text-xl pr-2 text-highlight">{project.name}</p>
                 {project.demoLink && (
                   <a
                     href={project.demoLink}
@@ -88,12 +88,12 @@ export function ProjectsSection({
                   </a>
                 )}
               </div>
-              <p className="px-3 py-1 m-1 border border-highlight text-highlight rounded-md">
+              <p className="px-3 py-0.5 bg-primary border border-highlight text-highlight rounded-md">
                 {project.year}
               </p>
             </div>
-            <p className="mx-3 mb-3">{project.description}</p>
-            <div className="flex flex-wrap ml-3 gap-3 justify-start w-full">
+            <p className="mt-2 mb-5">{project.description}</p>
+            <div className="flex flex-wrap gap-3 justify-start w-full">
               {project.skills.map((skill, index) => (
                 <p
                   key={index}
