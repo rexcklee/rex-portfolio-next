@@ -20,12 +20,12 @@ export function SkillsSection({
         <div className="flex-grow h-0.5 bg-highlightsecond"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto w-full flex flex-col md:flex-row md:justify-evenly text-center">
+      <div className="max-w-6xl mx-auto w-full flex flex-col lg:flex-row lg:justify-evenly text-center">
         {skillCategories &&
           skillCategories.map((category) => (
             <div
               key={category.id}
-              className="w-1/5 flex flex-col justify-start mb-10 sm:m-10 border-2 border-special rounded-xl p-10 bg-special inset-shadow-xs inset-shadow-highlight/20 shadow-xl shadow-highlightsecond/20 hover:shadow-highlight/20"
+              className="w-full lg:w-1/5 flex flex-col justify-start mb-10 sm:m-10 border-2 border-special rounded-xl p-10 bg-special inset-shadow-xs inset-shadow-highlight/20 shadow-xl shadow-highlightsecond/20 hover:shadow-highlight/20"
             >
               <p className=" text-second text-2xl mb-4">{category.name}</p>
               {category.skills.map((skill) => (
