@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Head } from "next/document";
 import { outfit } from "./fonts";
 
 import "./globals.css";
@@ -17,6 +18,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>Web Developer in Winnipeg | Chi Kin Lee</title>
+        <meta
+          name="description"
+          content="Professional web developer based in Winnipeg specializing in web technologies like React, Next.js, Ruby on Rails, PHP and Node.js."
+        />
+        <meta
+          name="keywords"
+          content="Web Developer, Winnipeg, Software Developer, React, Next.js, Freelance Developer"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta
+          property="og:title"
+          content="Web Developer in Winnipeg | Chi Kin Lee"
+        />
+        <meta
+          property="og:description"
+          content="Need a web developer in Winnipeg? I'm Chi Kin Lee, specializing in web technologies like React, Next.js, Ruby on Rails, PHP and Node.js."
+        />
+        <meta property="og:type" content="website" />
+      </Head>
+
       <body className={`antialiased bg-primary ${outfit.className}`}>
         <main className="flex flex-col justify-center items-center w-full text-third pt-14">
           <Navbar></Navbar>
