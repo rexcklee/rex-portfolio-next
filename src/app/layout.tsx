@@ -3,6 +3,7 @@ import { outfit } from "./fonts";
 
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,6 +21,7 @@ export default function RootLayout({
         <main className="flex flex-col justify-center items-center w-full text-third pt-14">
           <Navbar></Navbar>
           {children}
+          <Footer></Footer>
         </main>
       </body>
     </html>
