@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "rex-portfolio-server.rexlee.space",
+        hostname: `${process.env.NEXT_PUBLIC_STRAPI_API_URL}`,
         // port: "1337",
         pathname: "/uploads/**/*",
       },
